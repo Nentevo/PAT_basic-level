@@ -4,18 +4,18 @@
 using namespace std;
 //int i;
 ////用于递归的全局变量声明
-int splice(int num);
+int Callatz(int num);
 
 int main()
 {
 	int n;
 	cin>>n;
         //i=0;
-	cout<<splice(n)<<endl;
+	cout<<Callatz(n)<<endl;
 	return 0;
 }
 
-int splice(int num)
+int Callatz(int num)
 {
 	int i=0;
 	for(;num!=1;i++)
@@ -29,15 +29,15 @@ int splice(int num)
 }
 
 /*
-int splice(int num)
+int Callatz(int num)
 {
 	if(num==1)
 		return i;
 	i++;
 	if(num%2==0)
-		splice(num/2);
+		Callatz(num/2);
 	else
-		splice((3*num+1)/2);
+		Callatz((3*num+1)/2);
 	return i;
 }
 */
