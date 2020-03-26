@@ -28,7 +28,7 @@ int Callatz(int num)
 	return i;
 }
 
-/*
+/*递归函数
 int Callatz(int num)
 {
 	if(num==1)
