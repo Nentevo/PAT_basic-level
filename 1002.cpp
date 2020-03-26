@@ -1,5 +1,5 @@
 #include<iostream>
-#include<string.h>
+#include<cstring> //为C++对<string.h>的整合
 
 using namespace std;
 
