@@ -2,8 +2,10 @@
 #include<string>
 
 using namespace std;
+
 //int i;
 ////用于递归的全局变量声明
+
 int Callatz(int num);
 
 int main()
