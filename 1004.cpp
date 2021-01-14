@@ -3,7 +3,7 @@
 
 using namespace std;
 
-/*一开始列了一大堆变量，后来用结构体就解决了，简单明了
+/*一开始列了一大堆变量，后来用类&结构体就解决了，简单明了
 
   注意当cin和getline()混用时：由于cin的流提取运算符会根据它后面的变量类型读取数据，从非空白符号开始，遇到Enter、Space、Tab键时结束。
   getline()函数从istream中读取一行数据，当遇到"\n"时结束返回。 
@@ -15,15 +15,25 @@ using namespace std;
       cin.ignore();或者cin.ignore(1024,'\n');
       getline(cin, str);*/
 
+class list
+{
+	public:
+	string name;
+	string number;
+	int score;
+};
+
+/*
 struct list
 {
 	string name;
 	string number;
 	int score;
 };
+*/
 
 //C++结构体和类的主要区别在于结构体和类具有不同的默认访问控制属性
-//类中对于未指定访问控制属性的成员，其访问控制属性为private
+//类中对于未指定访问控制属性的成员，其访问控制属性为private，因此需声明是public
 //结构体中对于未指定访问控制属性的成员，其访问控制属性为public
 
 int main()
