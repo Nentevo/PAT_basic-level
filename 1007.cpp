@@ -21,7 +21,7 @@ int main()
 			if(i%j == 0)
 				break;
 		}
-		if(j>k)//遇到
+		if(j>k)//当i是素数时，j++会一直执行，跳出小循环时j已经不满足j<=k
 		{
 			if(i-pre == 2)
 			{
